@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1D7CE67E-0882-4BC2-A217-164B4C8A5A0D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GIT.Winform.Controls</RootNamespace>
+    <AssemblyName>GIT.Winform.Controls</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppearanceStyle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppearanceStyle.Designer.cs">
+      <DependentUpon>AppearanceStyle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonSettings\Conversions.cs" />
+    <Compile Include="CommonSettings\FormHeadingProperties.cs" />
+    <Compile Include="CommonSettings\Stylings.cs" />
+    <Compile Include="CommonSettings\Validations.cs" />
+    <Compile Include="gitFormHeader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gitFormHeader.Designer.cs">
+      <DependentUpon>gitFormHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gitCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="gitCheckBox.Designer.cs">
+      <DependentUpon>gitCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gitComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="gitComboBox.Designer.cs">
+      <DependentUpon>gitComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gitDateTimeMask.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gitDateTimeMask.Designer.cs">
+      <DependentUpon>gitDateTimeMask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gitDateTimePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="gitDateTimePicker.Designer.cs">
+      <DependentUpon>gitDateTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gitNumberKeypad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gitNumberKeypad.Designer.cs">
+      <DependentUpon>gitNumberKeypad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gitRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="gitRadioButton.Designer.cs">
+      <DependentUpon>gitRadioButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gitTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="gitTabControl.Designer.cs">
+      <DependentUpon>gitTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gitTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="gitTextBox.Designer.cs">
+      <DependentUpon>gitTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gitTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="gitTreeView.Designer.cs">
+      <DependentUpon>gitTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppearanceStyle.resx">
+      <DependentUpon>AppearanceStyle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gitFormHeader.resx">
+      <DependentUpon>gitFormHeader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gitCheckBox.resx">
+      <DependentUpon>gitCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gitComboBox.resx">
+      <DependentUpon>gitComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gitDateTimeMask.resx">
+      <DependentUpon>gitDateTimeMask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gitDateTimePicker.resx">
+      <DependentUpon>gitDateTimePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gitNumberKeypad.resx">
+      <DependentUpon>gitNumberKeypad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gitRadioButton.resx">
+      <DependentUpon>gitRadioButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gitTextBox.resx">
+      <DependentUpon>gitTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\datetime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backspace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FullKeypad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13473958_1213500498663055_1431921018_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13479331_1213500885329683_1917036467_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13479650_1213502218662883_1720479131_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\100.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Header Green.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeadingButton1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header Green2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizebutton.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
